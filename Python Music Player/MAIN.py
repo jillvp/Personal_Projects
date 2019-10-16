@@ -170,4 +170,6 @@ statusbar = Label(root, text="Welcome to SpaceWave", relief = SUNKEN, anchor = W
 statusbar.pack(side=BOTTOM, fill = X)   # add to bottom + fill x-as.
 
 
+# root['bg'] = 'black'
+
 root.mainloop()
