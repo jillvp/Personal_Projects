@@ -40,7 +40,7 @@ subMenu.add_command(label="About Us", command = about_us)
 mixer.init()  # initializing the mixer !
 
 root.title("SpaceWave")
-root.iconbitmap(r'data77_k4a_icon.ico')
+root.iconbitmap(r'images/data77_k4a_icon.ico')
 
 filelabel = Label(root, text='SpaceWave Sound Wave Player!')
 filelabel.pack(pady=10)
@@ -133,16 +133,16 @@ def mute_music():
 middleframe = Frame(root)
 middleframe.pack(pady=30, padx=30)
 
-PlayPhoto = PhotoImage(file='play-3-128.png') # convert image into a button
+PlayPhoto = PhotoImage(file='images/play-3-128.png') # convert image into a button
 PlayBtn = Button(middleframe, image=PlayPhoto, command=play_music) # add button
 PlayBtn.grid(row=0, column=0, padx=10)
 
 
-StopPhoto = PhotoImage(file='stop128.png')
+StopPhoto = PhotoImage(file='images/stop128.png')
 StopBtn = Button(middleframe, image=StopPhoto, command=stop_music)
 StopBtn.grid(row=0, column=1, padx=10)
 
-PausePhoto = PhotoImage(file='pink-pause-128.png')
+PausePhoto = PhotoImage(file='images/pink-pause-128.png')
 PauseBtn = Button(middleframe, image=PausePhoto, command=pause_music)
 PauseBtn.grid(row=0, column=2, padx=10)
 
@@ -151,12 +151,12 @@ PauseBtn.grid(row=0, column=2, padx=10)
 bottomframe = Frame(root)
 bottomframe.pack()
 
-RewindPhoto = PhotoImage(file='rewind64.png')
+RewindPhoto = PhotoImage(file='images/rewind64.png')
 RewindBtn = Button(bottomframe, image=RewindPhoto, command=rewind_music)
 RewindBtn.grid(row=0, column=0)
 
-MutePhoto = PhotoImage(file='mute64.png')
-VolumePhoto = PhotoImage(file='volume64.png')
+MutePhoto = PhotoImage(file='images/mute64.png')
+VolumePhoto = PhotoImage(file='images/volume64.png')
 VolumeBtn = Button(bottomframe, image=VolumePhoto, command=mute_music)
 VolumeBtn.grid(row=0, column=1)
 
@@ -169,7 +169,7 @@ scale.grid(row=0, column=2, pady=15, padx=30)
 statusbar = Label(root, text="Welcome to SpaceWave", relief = SUNKEN, anchor = W)   # creates border + anchor to West (left) side
 statusbar.pack(side=BOTTOM, fill = X)   # add to bottom + fill x-as.
 
-
-# root['bg'] = 'black'
+# root['bg'] = 'black'  
+# TO DO: change background color of image buttons
 
 root.mainloop()
